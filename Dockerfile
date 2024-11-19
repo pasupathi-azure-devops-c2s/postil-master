@@ -10,6 +10,6 @@ COPY . .
 
 EXPOSE 5000
 
-ENV NODE_ENV=client
+ENV NODE_ENV=server
 
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "server" ]
