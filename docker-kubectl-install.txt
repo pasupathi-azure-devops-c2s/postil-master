@@ -14,7 +14,14 @@ sudo systemctl status docker
 
 sudo usermod -aG docker $USER && newgrp docker
 
-2. kubectl install on ubuntu
+2. Install Node and NPM
+
+sudo apt install nodejs
+
+sudo apt install npm
+
+
+3. kubectl install on ubuntu
 
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl
 
@@ -30,7 +37,7 @@ sudo apt install -y kubectl
 
 sudo snap install kubectl --classic
 
-3. Install AZ-CLI on ubuntu
+4. Install AZ-CLI on ubuntu
 
 sudo apt update
 
@@ -48,10 +55,8 @@ Steps to deploy the project:
 
 git clone https://github.com/pasupathi-azure-devops-c2s/social-media-project.git
     
-cd client && docker build -t client:latest . && cd .. && cd server && docker build -t server:latest . && cd .. && cd socket && docker build -t socket:latest . && cd ..
+cd Postil-master && npm install && npm install nodemon@latest --save-dev
 
-docker-compose up --build
-    
 az login
     
 az acr login --name akscr01sample
