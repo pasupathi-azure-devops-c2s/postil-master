@@ -1,0 +1,17 @@
+Postil-master
+- client
+- controllers
+- middleware
+- models
+- routes
+- util
+.env
+.gitignore
+docker-kubectl-install.txt
+LICENSE
+package-lock.json
+package.json
+project-summary.txt
+README
+server.js
+sockerserver.js

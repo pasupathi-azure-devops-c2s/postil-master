@@ -16,9 +16,9 @@ sudo usermod -aG docker $USER && newgrp docker
 
 2. Install Node and NPM
 
-sudo apt install nodejs
-
 sudo apt install npm
+
+
 
 
 3. kubectl install on ubuntu
@@ -57,6 +57,7 @@ git clone https://github.com/pasupathi-azure-devops-c2s/social-media-project.git
     
 cd Postil-master && npm install && npm install nodemon@latest --save-dev
 
+cd client && 
 az login
     
 az acr login --name akscr01sample
