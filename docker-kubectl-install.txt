@@ -48,7 +48,6 @@ sudo curl -L "https://github.com/docker/compose/releases/download/$(curl -s http
 sudo chmod +x /usr/local/bin/docker-compose
 
 
-
 Steps to deploy the project:
 
 1. Docker image build and push
